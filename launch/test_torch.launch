@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<node name="scale_car_yolov5" pkg="scale_car_yolov5" type="ros_detect.py" output="screen">
+		<param name="source" value="/blackfly_s/image_color/compressed" />
+		<param name="weights" value="/home/minkiri/catkin_ws/src/scale_car_yolov5/src/yolov5/sunmoon.pt" />
+		<param name="data" value="$(find scale_car_yolov5)/src/yolov5/data/custom_data.yaml" />
+		<param name="device" value="cuda" />
+	</node>
+</launch>

@@ -1,0 +1,8 @@
+train: /home/minkiri/catkin_ws/src/scale_car_yolov5/src/train_data/images/train
+val: /home/minkiri/catkin_ws/src/scale_car_yolov5/src/train_data/images/train
+
+nc: 2
+
+names: ['car', 'obs']
+
+
